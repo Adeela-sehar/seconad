@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<style>
+    .container1{
+        height: auto;
+        width: 100%;
+        margin-top: 30px;
+        background-position: center;
+        background-size: cover;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-left: 10%;
+        background-image:url("https://images.unsplash.com/photo-1531685250784-7569952593d2?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    }
+.loader1{
+  width: 270px;
+  height: 40px;
+  background:
+   linear-gradient(#000 0 0) 0/0% no-repeat
+   #ddd;
+  animation: l11 2s infinite linear;
+}
+@keyframes l11 {
+    100% {background-size:100%}
+}
+.adi{
+    padding-left: 10%;
+    color: white;
+}
+.resume{
+height: auto;
+width: 100%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+justify-content: center;
+align-items: center;
+
+background-image: url("https://as2.ftcdn.net/v2/jpg/04/94/41/25/1000_F_494412578_TjfBKiVrdMhRtNlanFZ5xbQHdQM9MhiS.jpg");
+}
+
+
+
+.outer {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  background: radial-gradient(circle 230px at 0% 0%, #ffffff, #0c0d0d);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.dot {
+  width: 5px;
+  aspect-ratio: 1;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 100px;
+  z-index: 2;
+  right: 10%;
+  top: 10%;
+  animation: moveDot 6s linear infinite;
+}
+
+@keyframes moveDot {
+  0%,
+  100% {
+    top: 10%;
+    right: 10%;
+  }
+  25% {
+    top: 10%;
+    right: calc(100% - 35px);
+  }
+  50% {
+    top: calc(100% - 30px);
+    right: calc(100% - 35px);
+  }
+  75% {
+    top: calc(100% - 30px);
+    right: 10%;
+  }
+}
+
+.card {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+  border: solid 1px #202222;
+  background-size: 20px 20px;
+  background: radial-gradient(circle 280px at 0% 0%, #444444, #0c0d0d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  color: #fff;
+}
+.ray {
+  width: 220px;
+  height: 45px;
+  border-radius: 100px;
+  position: absolute;
+  background-color: #c7c7c7;
+  opacity: 0.2;
+  box-shadow: 0 0 50px #fff;
+  filter: blur(5px);
+  transform-origin: 10%;
+  top: 0%;
+  left: 0;
+  transform: rotate(40deg);
+}
+
+.card .text {
+  font-weight: bolder;
+  font-size: 1rem;
+  background: linear-gradient(45deg, #d1cece 4%, #fff, #000);
+  background-clip: text;
+  color: transparent;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #817b7b;
+}
+.topl {
+  top: 10%;
+  background: linear-gradient(90deg, #888888 30%, #1d1f1f 70%);
+}
+.bottoml {
+  bottom: 10%;
+}
+.leftl {
+  left: 10%;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, #747474 30%, #222424 70%);
+}
+.rightl {
+  right: 10%;
+  width: 1px;
+  height: 100%;
+}
+
+.about{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+.carousel-item{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.web{
+
+    height: auto;
+    width: 100%;
+    background-color: yellow;
+    color: black;
+} 
+.port{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+.p{
+    height: 30vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+    background-image: url("https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9ydGZvbGlvJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D");
+}
+.o{
+    height: 30vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+    background-image: url("https://www.shutterstock.com/shutterstock/photos/2525348753/display_1500/stock-photo-blue-book-on-the-table-2525348753.jpg");
+}
+.r{
+    height: 30vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+    background-image: url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fHww");
+}
+.t{
+    height: 30vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+    background-image: url("https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.f{
+    height: 30vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+    background-image: url("https://images.pexels.com/photos/459335/pexels-photo-459335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.l{
+    height: 30vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+    background-image: url("https://images.pexels.com/photos/250591/pexels-photo-250591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+
+
+
+
+
+    
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    
+    <div class="container1"> <h1 style="justify-content: center;align-items: center;display: flex; ">----WELCOME TO MY WEBSITE---- <br>  Meet your web-developer.Read my portfolio and hire me.... <br>  THANKS <br><br></h1>  <div class="loader1"> <h1 class="adi">ADEELA_SEHAR...</h1></div></div>
+
+
+
+    <div class="container resume"> <h1 style="justify-content: center;align-items: center;display: flex;padding-top: 5%;">Read My Resume</h1> <br> 
+        <div class="outer">
+          <div class="dot"></div>
+          <div class="card">
+            <div class="ray"></div>
+            <div class="text">Matric from  <br>AL_SULMAN SCHOOL <br>Got 99% marks. </div>
+            <div class="line topl"></div>
+            <div class="line leftl"></div>
+            <div class="line bottoml"></div>
+            <div class="line rightl"></div>
+          </div>
+        </div> <br>
+
+        <div class="outer">
+            <div class="dot"></div>
+            <div class="card">
+              <div class="ray"></div>
+              <div class="text">Intermediate from  <br>Punjab group of collegs <br>Got 70% marks .</div>
+              <div class="line topl"></div>
+              <div class="line leftl"></div>
+              <div class="line bottoml"></div>
+              <div class="line rightl"></div>
+            </div>
+          </div> <br>
+
+          <div class="outer">
+            <div class="dot"></div>
+            <div class="card">
+              <div class="ray"></div>
+              <div class="text"> BS in AI from<br>The islamia univrsity BWP. <br>3RD semester continue... </div>
+              <div class="line topl"></div>
+              <div class="line leftl"></div>
+              <div class="line bottoml"></div>
+              <div class="line rightl"></div>
+            </div>
+          </div>
+
+
+
+        </div> <br>
+
+<div class=" container about"> <h1 style="   justify-content: center;align-items: center; display: flex;
+">ABOUT</h1> <br> <h3 style="display: flex;justify-content: center;align-items: center;">"Web development is difficult,only then it is fun to do .You just have to set your standards."</h3></div> <br>
+
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="    https://c8.alamy.com/comp/TB7MPA/books-and-laptop-on-wooden-table-TB7MPA.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.gettyimages.com/id/1401178943/photo/young-lady-using-a-laptop-to-do-research-on-the-internet-woman-working-on-a-project-mixed.jpg?s=612x612&w=0&k=20&c=pptIVFV4VH21H1wict2VTWg2xvb8ykmsmddxiV3iPog=" alt="Chicago" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="https://img.freepik.com/free-photo/notebook-near-laptop-table_23-2147772397.jpg" alt="New York" class="d-block" style="width:100%">
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div> <br>
+
+
+
+
+  <div class="container web"> <h1 style="   justify-content: center;align-items: center; display: flex;
+">My Web skills</h1></div>
+
+</style>
+<div class="container n">
+
+<div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+<h1>HTML <br>SKILL:90% <br> <br>CSS <br>SKILL:85%</h1>
+</div>
+
+<div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+<h1>BOOTSTRAP <br>SKILL:90% <br><br>JAVA <br>SKILL:50%</h1>
+</div>
+
+<div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+<h1>REACT <br>SKILL:35%(work on)</h1>
+
+</div>
+</div>
+   <br>
+   <div class=" container port"><h1 style="display: flex;justify-content: center;align-items: center;">MY PORTFOLIO</h1></div>
+   
+   <div class="container p">   </div> <br>
+   <div class="container o">   </div> <br>
+   <div class="container r ">   </div><br>
+   <div class="container t">   </div><br>
+   <div class="container f">   </div><br>
+   <div class="container l">   </div><br>
+
+   <div class=" container team"><h1 style="display: flex;justify-content: center;align-items: center;">MY TEAM</h1> <h4 style="justify-content: center;align-items: center;display: flex;">"Together we are stronger"</h4></div> <br>
+
+
+   <div class="card" style="width: 25rem; ">
+    <img src="https://as1.ftcdn.net/v2/jpg/04/98/91/96/1000_F_498919631_Me4XD0pVj0tX109wnyH7FIo6FHTb5J0E.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text"> <h4>Adeela sehar.</h4></p>
+    </div>
+</div> <br>
+<div class="card" style="width: 25rem; ;">
+    <img src="https://www.shutterstock.com/shutterstock/photos/1531460768/display_1500/stock-photo-full-length-body-size-photo-of-focused-serious-intelligent-coworking-manager-standing-confidently-1531460768.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text"> <h4>Abdul ahad.</h4></p>
+    </div>
+</div> <br>
+<div class="container" style="background-color: yellow;">
+<div class="form-floating">
+    <input type="Name" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword"> Enter your Name</label>
+  </div> <br>
+<div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput"> Enter  your Email address</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword"> Enter your Password</label>
+  </div> <br>
+  <input type="submit" value=" Submit">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
